@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRJ || Contact Us</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        main {
+            width: 50%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        main h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #293150;
+        }
+        
+        main small {
+            color: #293150;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        main form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+        }
+        
+        main form input,
+        textarea,
+        button {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: 1px solid #ece7f0;
+        }
+        
+        main form input::placeholder,
+        textarea::placeholder {
+            color: #b2a7bb;
+        }
+        
+        main form input:focus,
+        textarea:focus {
+            border: 1px solid #1463f3;
+        }
+        
+        main form button {
+            background: #1463f3;
+            /* background: linear-gradient( 140deg, rgba(244, 116, 204, 1) 0%, rgba(247, 108, 170, 1) 40%, rgba(244, 68, 116, 1) 100%); */
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 3px 0px 0px rgba(244, 116, 204, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1 class="logo"><a href="../index.html">DRJ</a></h1>
+
+        <nav>
+            <ul class="nav-area">
+                <li>
+                    <a href="../index.html">HOME</a></li>
+                <li>
+                    <a href="../construction/uc.html">ABOUT US</a></li>
+                <li>
+                    <a href="../main/contactus.html">CONTACT US</a></li>
+                <li>
+                    <a href="../templates/index.html">TEMPLATES</a></li>
+            </ul>
+        </nav>
+        <a href="./construction/uc.html" class="btn-area">LOG IN</a>
+    </header>
+
+    <main>
+        <h1>
+            <Span class="auto-type"></Span>
+        </h1>
+        <small style="padding: 20px 0;">Send a message to us for any query regarding any problem.</small>
+
+        <form>
+            <input type="text" name="fullname" id="fulname" placeholder="Full Name" autocomplete="off" required>
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off" required>
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+            <button class="btn">Send</button>
+        </form>
+    </main>
+
+
+
+
+    <footer class="ftr">
+        <div class="box-1">
+            <h1 class="logo"><a href="./index.html">DRJ</a></h1>
+            <p> <span>&#169</span> 2022 D-ResumeJunction.netlify.app <br> All rights reserved.</p>
+        </div>
+        <div class="box-2">
+            <ul>
+                <li><a target="_blank" href="https://novoresume.com/career-blog/resume-examples">Resume Example</a></li>
+                <li><a href="../index.html">Resume Builder</a></li>
+                <li><a href="../construction/uc.html">About Us</a></li>
+                <li><a target="_blank" href="../main/privacy.html">Privacy Policy</a></li>
+                <li>
+                    <a href="../main/contactus.html" target="_blank">Contact Us</a></li>
+                <li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Contact US..."],
+            typeSpeed: 70,
+            backSpeed: 20,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

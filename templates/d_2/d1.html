@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="./d1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a9cc1ae211.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--     
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2">Online-Resume-Builder</h1>
+        <p class="text-center">Project By- Dheeraj & Krishna Aggarwal</p>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" id="nameField" placeholder="eg: Dheeraj Sain" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="nameField">Job Profile</label>
+                    <input type="text" id="jpField" placeholder="eg: Web Developer" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="nameField">Contact Information</label>
+                    <input type="number" id="contactField" placeholder="eg: +91-XXXXXXXXXX" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="emailField">Email</label>
+                    <input type="email" name="" id="emailField" class="form-control" placeholder="eg: abc@xyz.com">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="nameField">Address</label>
+                    <textarea name="" id="addressField" class="form-control" placeholder="eg: c-35, sector-21-D, faridabad, haryana"></textarea>
+                </div>
+
+
+
+
+                -------------------------------
+
+
+
+
+                <div class="form-group mt-2">
+                    <label for="nameField">Date of Birth</label>
+                    <input type="date" name="" id="dobField" class="form-control" placeholder="eg: 15-1-1999">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="nameField">Father's Name</label>
+                    <input name="" id="FatherField" class="form-control" placeholder="eg: ABC ">
+                </div>
+                <div class=" form-group mt-2 ">
+                    <label for="nameField ">Gender</label>
+                    <input name=" " id="genderField " class="form-control " placeholder="eg: Male ">
+                </div>
+                <div class="form-group mt-2 ">
+                    <label for="nameField ">Marital Status</label>
+                    <input name=" " id="msField " class="form-control " placeholder="eg: Married ">
+                </div>
+                <div class="form-group mt-2 ">
+                    <label for="nameField ">Language Known</label>
+                    <input name=" " id="langField " class="form-control " placeholder="eg: English, Hindi ">
+                </div>
+                <div class="form-group mt-2 ">
+                    <label for="nameField ">Hobbies</label>
+                    <input name=" " id="hobbyField " class="form-control " placeholder="eg: Music, Movies ">
+                </div>
+
+
+                <p class="text-secondary mt-2 ">Important Links</p>
+                <div class="form-group ">
+                    <label for="nameField ">Facebook</label>
+                    <input type="text " id="fbField " placeholder="eg: https://facebook.com/whodheeeraj " class="form-control ">
+                </div>
+
+
+                <div class="form-group ">
+                    <label for="nameField ">Twitter</label>
+                    <input type="text " id="twitterField " placeholder="eg: https://twitter.com/whodheeeraj " class="form-control ">
+                </div>
+
+
+                <div class="form-group ">
+                    <label for="nameField ">GitHub</label>
+                    <input type="text " id="githubField " placeholder="eg: https://github.com/whodheeeraj " class="form-control ">
+                </div>
+
+
+                <div class="form-group ">
+                    <label for="nameField ">LinkedIn</label>
+                    <input type="text " id="liField " placeholder="eg: https://linkedin.com/whodheeeraj " class="form-control ">
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6 ">
+                <h3>Professional Information</h3>
+                <div class="form-group mt-2 " id="aq ">
+                    <label for=" ">Education</label>
+                    <textarea name=" " rows="1 " id="aqField " class="form-control aqField " placeholder="Enter Here "></textarea>
+
+                    new textarea
+
+    <div class="container text-center mt-2 " id="aqAddButton ">
+        <button onclick="addNewAQ() " class="btn btn-primary btn-sm ">Add</button>
+    </div>
+    </div>
+
+    <div class="form-group mt-2 " id="we ">
+        <label for=" ">Work Experience</label>
+        <textarea name=" " id="weField " rows="1 " class="form-control weField " placeholder="Enter Here "></textarea>
+
+        new textarea
+
+        <div class="container text-center mt-2 " id="weAddButton ">
+            <button onclick="addNewWE() " class="btn btn-primary btn-sm ">Add</button>
+        </div>
+    </div>
+
+    <div class="form-group mt-2 " id="sk ">
+        <label for=" ">Skills</label>
+        <textarea name=" " id="skillsField " rows="1 " class="form-control weField " placeholder="Enter Here "></textarea>
+
+        
+
+        <div class="container text-center mt-2 " id="skAddButton ">
+            <button onclick="addNewSK() " class="btn btn-primary btn-sm ">Add</button>
+        </div>
+    </div>
+
+    <div class="form-group mt-2 ">
+        <label for=" ">Career Objective</label>
+        <textarea name=" " id="objectiveField " class="form-control " placeholder="Enter Here "></textarea>
+    </div>
+
+
+    <div class="form-group mt-2 ">
+        <label for=" ">Declaration</label>
+        <textarea name=" " id="declareField " class="form-control " placeholder="Enter Here "></textarea>
+    </div>
+    </div>
+
+    <div class="container text-center p-5 ">
+        <button class="btn btn-primary btn-lg " onclick="generateCV() ">Generate CV</button>
+    </div>
+
+    </div>
+    </div> -->
+
+
+    <div id="main ">
+        <div class="but">
+            <button class="one">
+                <a href="../d_1/index.html" >Proceed to this template</a> 
+             </button>
+        </div>
+
+
+        <header class="header ">
+            <h1><u>CURRICULAM VITAE</u></h1>
+        </header>
+
+        <div class="details ">
+            <p id="nameT" style="font: weight 600"><b>DHEERAJ</b></p>
+            <p id="addressT">C/33, Sector 21A, faridabad, haryana</p>
+            <p id="contactT">+91-7303113611</p>
+            <p id="emailT">xyz@gmail.com</p>
+        </div>
+        <hr>
+
+        <div class="object ">
+
+            <div class="career line-box ">
+                <h1>Career Objective</h1>
+                <p id="objectiveT">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam hic sed laboriosam, facilis facere aperiam placeat! Eveniet, repellat rerum incidunt vitae sed quia explicabo vel saepe in aliquid officiis praesentium commodi impedit
+                    quibusdam eligendi maxime maiores tenetur culpa excepturi enim molestias quas! Suscipit vitae architecto qui nulla fugit excepturi esse.</p>
+
+            </div>
+            <div class="academic line-box ">
+                <h1 id="aqT">Education</h1>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                </ul>
+            </div>
+
+            <div class="technical line-box ">
+                <h1>Skills</h1>
+                <ul id="skillsT">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                </ul>
+            </div>
+
+            <div class="work line-box ">
+                <h1>Work Experience</h1>
+                <ul id="weT">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                </ul>
+            </div>
+            <!-- <div class="strength line-box ">
+                <h1>Strength</h1>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis?</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="personal line-box ">
+            <h1>Personal Profile</h1>
+            <div class="personal1 ">
+                <div class="box1 w ">
+
+                    <p><b>Father's Name</b></p>
+                    <p><b>Date of Birth</b></p>
+                    <p><b>Gender</b></p>
+                    <p><b>Marital Status</b></p>
+                    <p><b>Language Known</b></p>
+                    <p><b>Hobbies</b></p>
+                </div>
+                <div class="box2 w ">
+                    <p id="FatherField">Satpal</p>
+                    <p id="dobField">15-10-2001</p>
+                    <p id="genderField">Male</p>
+                    <p id="msField">Unmarried</p>
+                    <p id="langField">Hindi, English</p>
+                    <p id="hobbyField">Football, Writing, Music</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="declare line-box ">
+            <h1>Declaration</h1>
+            <p id="declareT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic architecto consequatur aperiam reiciendis esse unde vero voluptatibus distinctio provident.</p>
+
+        </div>
+
+        <hr>
+
+        <div class="date line-box ">
+            <h4 id="dateT">Date</h4>
+            <h4 id="placeT">Place</h4>
+        </div>
+    </div>
+
+
+
+    <script src="./d1.js"></script>
+
+</body>
+
+</html>
